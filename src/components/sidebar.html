@@ -1,8 +1,8 @@
-<aside class="w-20 bg-surface-50 border-r border-border hidden md:flex flex-col items-center shrink-0 z-30 h-full">
+<aside class="w-12 bg-surface-50 border-r border-border hidden md:flex flex-col items-center shrink-0 z-30 h-full">
     <!-- Logo / Brand Area (Matches Header Height) -->
-    <div class="h-20 w-full flex items-center justify-center border-b border-border shrink-0 mb-4">
+    <div class="h-12 w-full flex items-center justify-center border-b border-border shrink-0 mb-4">
         <div
-            class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors cursor-pointer group">
+            class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors cursor-pointer group">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                 class="w-5 h-5 group-hover:scale-110 transition-transform">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -12,95 +12,77 @@
         </div>
     </div>
 
-    <!-- Optional FAB -->
-    <!-- <button class="mb-8 w-14 h-14 bg-primary text-white rounded-[16px] shadow-lg flex items-center justify-center hover:bg-primary-muted transition-colors">
-        <i data-lucide="plus" class="w-6 h-6"></i>
-    </button> -->
-
     <!-- Destinations -->
-    <nav class="flex-1 w-full flex flex-col gap-2 overflow-y-auto no-scrollbar scroll-smooth items-center">
+    <nav class="flex-1 w-full flex flex-col gap-3 overflow-y-auto no-scrollbar scroll-smooth items-center py-2">
 
         <!-- Dashboard (Active) -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
-            <div
-                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors group-hover:bg-white/5">
                 <i data-lucide="layout-dashboard"
-                    class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+                    class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Dash</span>
         </a>
 
         <!-- Transactions (Selected State Example) -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1">
             <div
-                class="w-14 h-8 rounded-full bg-primary/20 flex items-center justify-center transition-colors shadow-inner ring-1 ring-white/5">
-                <i data-lucide="receipt" class="w-6 h-6 text-primary"></i>
+                class="w-9 h-9 rounded-lg bg-primary/20 flex items-center justify-center transition-colors shadow-inner ring-1 ring-white/5">
+                <i data-lucide="receipt" class="w-5 h-5 text-primary"></i>
             </div>
-            <span class="text-[11px] font-bold text-gray-200">History</span>
         </a>
 
         <!-- Analytics -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
-            <div
-                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
-                <i data-lucide="bar-chart-2" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors group-hover:bg-white/5">
+                <i data-lucide="bar-chart-2" class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Stats</span>
         </a>
 
         <!-- Divider -->
-        <div class="w-8 h-[1px] bg-border my-2"></div>
+        <div class="w-6 h-[1px] bg-border my-1"></div>
 
         <!-- Wallet / Accounts -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
-            <div
-                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
-                <i data-lucide="wallet" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors group-hover:bg-white/5">
+                <i data-lucide="wallet" class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Wallet</span>
         </a>
 
         <!-- Savings -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
-            <div
-                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
-                <i data-lucide="piggy-bank" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors group-hover:bg-white/5">
+                <i data-lucide="piggy-bank" class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Save</span>
         </a>
 
         <!-- Divider -->
-        <div class="w-8 h-[1px] bg-border my-2"></div>
+        <div class="w-6 h-[1px] bg-border my-1"></div>
 
         <!-- Approvals -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1 relative">
-            <div
-                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1 relative">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors group-hover:bg-white/5">
                 <!-- Badge -->
                 <span
-                    class="absolute top-1 right-2 w-2.5 h-2.5 bg-red-500 rounded-full border border-surface-50 z-10"></span>
+                    class="absolute top-1.5 right-1.5 w-2 h-2 bg-red-500 rounded-full border border-surface-50 z-10"></span>
                 <i data-lucide="check-circle"
-                    class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+                    class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Tasks</span>
         </a>
 
     </nav>
 
     <!-- Bottom Actions / User -->
-    <div class="mt-auto flex flex-col gap-4 items-center w-full">
+    <div class="mt-auto flex flex-col gap-3 items-center w-full pb-4">
         <!-- Settings -->
-        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
-            <div
-                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
-                <i data-lucide="settings" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+        <a href="#" class="group w-full flex flex-col items-center justify-center gap-1">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center transition-colors group-hover:bg-white/5">
+                <i data-lucide="settings" class="w-5 h-5 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <!-- No label for settings commonly in rail, or keep it consistent -->
         </a>
 
         <!-- User Avatar -->
         <button
-            class="w-10 h-10 rounded-full bg-gray-700 overflow-hidden ring-2 ring-transparent hover:ring-primary/50 transition-all mt-2">
+            class="w-8 h-8 rounded-full bg-gray-700 overflow-hidden ring-2 ring-transparent hover:ring-primary/50 transition-all">
             <img src="https://ui-avatars.com/api/?name=John+Doe&background=27272a&color=fff" alt="User"
                 class="w-full h-full object-cover">
         </button>
