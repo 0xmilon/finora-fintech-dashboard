@@ -1,0 +1,43 @@
+<div class="px-6 py-4 flex flex-wrap items-center justify-between gap-4 border-b border-border/50 bg-background">
+    <!-- Left: Filters -->
+    <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
+        <!-- View Dropdown -->
+        <button
+            class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-100 hover:bg-surface-200 border border-border text-sm text-gray-300 transition-colors">
+            <span class="font-medium">All Transactions</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-gray-500"></i>
+        </button>
+
+        <div class="w-px h-6 bg-border mx-2"></div>
+
+        <!-- Filter Action -->
+        <button
+            class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-dashed border-gray-600 hover:border-gray-400 text-sm text-gray-400 hover:text-white transition-colors">
+            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+            <span>Filter</span>
+        </button>
+
+        <!-- Date -->
+        <button
+            class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-50 border border-border text-sm text-gray-300 hover:border-gray-500 transition-colors">
+            <span>This Month</span>
+            <i data-lucide="calendar" class="w-3.5 h-3.5 text-gray-500"></i>
+        </button>
+
+        <!-- Quick Filters -->
+        <button
+            class="px-3 py-1.5 rounded-full bg-surface-50 border border-border text-sm text-gray-300 hover:border-gray-500 transition-colors">
+            Amount > $100
+        </button>
+    </div>
+
+    <!-- Right: View Toggle -->
+    <div class="flex items-center bg-surface-100 p-0.5 rounded-lg border border-border">
+        <button class="p-1.5 rounded text-white bg-surface-300 shadow-sm">
+            <i data-lucide="list" class="w-4 h-4"></i>
+        </button>
+        <button class="p-1.5 rounded text-gray-500 hover:text-gray-300 transition-colors">
+            <i data-lucide="grid" class="w-4 h-4"></i>
+        </button>
+    </div>
+</div>

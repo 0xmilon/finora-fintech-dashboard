@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="dark h-full">
+<!-- include: "head" -->
+
+<body
+    class="bg-background text-gray-300 font-sans antialiased flex h-full overflow-hidden selection:bg-primary/30 selection:text-primary-100">
+
+    <!-- Sidebar -->
+    <!-- include: "sidebar" -->
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col min-w-0 overflow-hidden relative bg-background">
+
+        <!-- Header -->
+        <!-- include: "header" -->
+
+        <!-- Scrollable Area -->
+        <div class="flex-1 overflow-y-auto custom-scrollbar relative">
+            <div class="min-h-full flex flex-col">
+
+                <!-- Filter Bar -->
+                <!-- include: "filter-bar" -->
+
+                <!-- Analytics Section -->
+                <!-- include: "analytics" -->
+
+                <!-- Transaction Table -->
+                <!-- include: "transaction-table" -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

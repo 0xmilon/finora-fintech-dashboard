@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Reset/Base */
+html, body {
+    @apply bg-background text-gray-300 font-sans antialiased;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-white tracking-tight;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}

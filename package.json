@@ -1,0 +1,20 @@
+{
+    "name": "fintech-dashboard",
+    "version": "1.0.0",
+    "module": "index.ts",
+    "type": "module",
+    "scripts": {
+        "build": "bun build.ts",
+        "dev": "bun build.ts --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.4.19",
+        "@tailwindcss/typography": "^0.5.19",
+        "@tailwindcss/forms": "^0.5.10",
+        "typescript": "^5.9.3",
+        "bun-types": "latest"
+    },
+    "dependencies": {
+        "packages": "^0.0.8"
+    }
+}
