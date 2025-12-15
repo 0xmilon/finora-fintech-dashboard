@@ -4,17 +4,16 @@ export default {
         "./src/**/*.{html,js,ts,jsx,tsx}",
         "./dist/**/*.html"
     ],
-    darkMode: 'class', // We will force dark mode mostly, or use system. Prompt says "ONLY DARK MOOD VERSION".
+    darkMode: 'class',
     theme: {
         extend: {
             fontFamily: {
                 sans: ['"Outfit"', 'sans-serif'],
-                mono: ['"Space Grotesk"', 'monospace'], // Using Space Grotesk for numbers/headers as requested style
+                mono: ['"Space Grotesk"', 'monospace'],
                 display: ['"Space Grotesk"', 'sans-serif'],
             },
             colors: {
-                // Custom premium dark palette
-                background: '#050505', // Almost black
+                background: '#050505',
                 surface: {
                     50: '#121212',
                     100: '#1A1A1A',
@@ -22,10 +21,10 @@ export default {
                     300: '#404040',
                 },
                 primary: {
-                    DEFAULT: '#F97316', // Orange-500 muted
+                    DEFAULT: '#F97316',
                     muted: '#C2410C',
                 },
-                border: '#27272a', // Zinc 800
+                border: '#27272a',
             },
             spacing: {
                 '18': '4.5rem',

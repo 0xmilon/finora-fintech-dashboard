@@ -1,12 +1,13 @@
 import { readdir, mkdir, readFile, writeFile } from "fs/promises";
-import { join, dirname, basename, extname } from "path";
-import { $ } from "bun";
+import { join } from "path";
+import Bun, { $ } from "bun";
+import tailwind from "bun-plugin-tailwindcss";
+
 
 const SRC_DIR = "./src";
 const DIST_DIR = "./dist";
 const COMPONENTS_DIR = join(SRC_DIR, "components");
 const PAGES_DIR = join(SRC_DIR, "pages");
-const LAYOUT_DIR = join(SRC_DIR, "layout");
 
 async function buildHtml() {
     console.log("🏗️  Building HTML...");
@@ -22,14 +23,8 @@ async function buildHtml() {
         const filePath = join(PAGES_DIR, file);
         let content = await readFile(filePath, "utf-8");
 
-        // Process Layout (simplified: wrap content in layout if indicated, or just manual include)
-        // For now, let's assume pages might start with a layout directive or just use includes.
-        // We'll stick to 'include' for simplicity and flexibility.
-
-        // Process Includes with recursion support (1 level deep for now to avoid infinite loops easily)
         content = await processIncludes(content);
 
-        // Write to dist
         await writeFile(join(DIST_DIR, file), content);
         console.log(`✅ Wrote ${file}`);
     }
@@ -38,7 +33,6 @@ async function buildHtml() {
 async function processIncludes(content: string): Promise<string> {
     const includeRegex = /<!--\s*include:\s*['"](.+?)['"]\s*-->/g;
 
-    // Replace all occurrences
     const replacements = await Promise.all(
         Array.from(content.matchAll(includeRegex)).map(async (match) => {
             const componentName = match[1];
@@ -46,8 +40,6 @@ async function processIncludes(content: string): Promise<string> {
 
             try {
                 let componentContent = await readFile(componentPath, "utf-8");
-                // Recursive processing? nice to have.
-                // componentContent = await processIncludes(componentContent); 
                 return { match: match[0], content: componentContent };
             } catch (e) {
                 console.error(`⚠️  Component not found: ${componentPath}`);
@@ -71,6 +63,23 @@ async function buildCss() {
         console.log("✅ CSS Built");
     } catch (e) {
         console.error("❌ CSS Build Failed", e);
+        process.exit(1);
+    }
+}
+
+async function buildJs() {
+    console.log("🔨 Building JS...");
+    try {
+        await Bun.build({
+            entrypoints: [join(SRC_DIR, "index.ts")],
+            outdir: DIST_DIR,
+            minify: true,
+            // plugins: [tailwind()], // Removing plugin in favor of CLI for explicit CSS file
+        });
+        console.log("✅ JS Built");
+    } catch (e) {
+        console.error("❌ JS Build Failed", e);
+        process.exit(1);
     }
 }
 
@@ -79,7 +88,8 @@ async function main() {
 
     await Promise.all([
         buildHtml(),
-        buildCss()
+        buildCss(),
+        buildJs()
     ]);
 
     const end = performance.now();
