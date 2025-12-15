@@ -8,6 +8,9 @@ bun.lockb
 dist
 *.tsbuildinfo
 
+# Project-specific
+TASKS/
+
 # Environment variables
 .env
 .env.local
