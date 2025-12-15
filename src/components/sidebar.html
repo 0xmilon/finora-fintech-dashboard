@@ -1,192 +1,108 @@
-<aside
-    class="w-64 bg-surface-50 border-r border-border hidden md:flex flex-col shrink-0 z-30 transition-all duration-300 md:w-20 lg:w-64">
-    <!-- Logo Area -->
-    <div
-        class="h-16 flex items-center px-6 border-b border-border/50 md:px-0 md:justify-center lg:px-6 lg:justify-start">
-        <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary shrink-0">
-                <!-- LEAP WALLET LOGO from SVGL -->
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-5 h-5">
-                    <g clip-path="url(#a)">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M3.737 4.54a1.59 1.59 0 0 0-1.558 1.549v11.821a1.59 1.59 0 0 0 1.558 1.55h16.526a1.59 1.59 0 0 0 1.558-1.55V6.09a1.59 1.59 0 0 0-1.558-1.55H3.737ZM2.179 6.09A1.59 1.59 0 0 1 3.737 4.54H20.26c.861 0 1.558.688 1.558 1.55v6.526a.53.53 0 0 1-.529.529h-9.84a5.277 5.277 0 1 0 0 1.056h9.84a.53.53 0 0 1 .53.529v3.74a1.59 1.59 0 0 1-1.558 1.55H3.737a1.59 1.59 0 0 1-1.558-1.55V6.09Z"
-                            fill="currentColor"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12.43 12.656a.465.465 0 0 1 0-.93h.931a.465.465 0 1 1 0 .93h-.931Z" fill="currentColor">
-                        </path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M11.498 12.188a.465.465 0 1 1 .93 0v.936a.465.465 0 1 1-.93 0v-.936Z"
-                            fill="currentColor"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12.43 14.053a.465.465 0 1 1 0-.93h.931a.465.465 0 1 1 0 .93h-.931Z" fill="currentColor">
-                        </path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M9.13 14.122a.465.465 0 0 1 0-.93h3.766a.465.465 0 1 1 0 .93H9.13Z" fill="currentColor">
-                        </path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M11.498 14.981a.465.465 0 1 1 .93 0v.931a.465.465 0 1 1-.93 0v-.93Z" fill="currentColor">
-                        </path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12.43 16.377a.465.465 0 1 1 0-.93h.931a.465.465 0 1 1 0 .93h-.931Z" fill="currentColor">
-                        </path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M11.498 12.203a3.736 3.736 0 1 0 0 7.472 3.736 3.736 0 0 0 0-7.472Zm-4.665 3.736a4.665 4.665 0 1 1 9.33 0 4.665 4.665 0 0 1-9.33 0Z"
-                            fill="currentColor"></path>
-                    </g>
-                    <defs>
-                        <clipPath id="a">
-                            <path fill="currentColor" transform="translate(2.179 4.54)" d="M0 0h19.642v14.919H0z">
-                            </path>
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
-            <span class="font-display font-semibold text-lg text-white tracking-wide md:hidden lg:block">FINORA</span>
+<aside class="w-20 bg-surface-50 border-r border-border hidden md:flex flex-col items-center shrink-0 z-30 h-full">
+    <!-- Logo / Brand Area (Matches Header Height) -->
+    <div class="h-16 w-full flex items-center justify-center border-b border-border shrink-0 mb-4">
+        <div
+            class="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center text-primary hover:bg-primary/20 transition-colors cursor-pointer group">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                class="w-5 h-5 group-hover:scale-110 transition-transform">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.737 4.54a1.59 1.59 0 0 0-1.558 1.549v11.821a1.59 1.59 0 0 0 1.558 1.55h16.526a1.59 1.59 0 0 0 1.558-1.55V6.09a1.59 1.59 0 0 0-1.558-1.55H3.737ZM12 11a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
+                    fill="currentColor"></path>
+            </svg>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="flex-1 overflow-y-auto py-6 px-3 space-y-8 custom-scrollbar">
-        <!-- Main Section -->
-        <div>
-            <div class="px-3 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider md:hidden lg:block">Main
+    <!-- Optional FAB -->
+    <!-- <button class="mb-8 w-14 h-14 bg-primary text-white rounded-[16px] shadow-lg flex items-center justify-center hover:bg-primary-muted transition-colors">
+        <i data-lucide="plus" class="w-6 h-6"></i>
+    </button> -->
+
+    <!-- Destinations -->
+    <nav class="flex-1 w-full flex flex-col gap-2 overflow-y-auto no-scrollbar scroll-smooth items-center">
+
+        <!-- Dashboard (Active) -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+            <div
+                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+                <i data-lucide="layout-dashboard"
+                    class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <!-- Mobile/Tablet separator -->
-            <div class="px-3 mb-2 hidden md:block lg:hidden text-center text-xs text-gray-700">-</div>
+            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Dash</span>
+        </a>
 
-            <ul class="space-y-1">
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Dashboard">
-                        <i data-lucide="layout-dashboard" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Dashboard</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md bg-white/5 text-white relative group md:justify-center lg:justify-start"
-                        title="Transactions">
-                        <!-- Active Indicator -->
-                        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full"></div>
-                        <i data-lucide="receipt" class="w-4 h-4 text-primary"></i>
-                        <span class="text-sm font-medium ml-1 md:hidden lg:block">Transactions</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Cash Flow">
-                        <i data-lucide="arrow-right-left" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Cash Flow</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Analytics">
-                        <i data-lucide="bar-chart-2" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Analytics</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Reports">
-                        <i data-lucide="file-text" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Reports</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Money Section -->
-        <div>
-            <div class="px-3 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider md:hidden lg:block">Money
+        <!-- Transactions (Selected State Example) -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+            <div
+                class="w-14 h-8 rounded-full bg-primary/20 flex items-center justify-center transition-colors shadow-inner ring-1 ring-white/5">
+                <i data-lucide="receipt" class="w-6 h-6 text-primary"></i>
             </div>
-            <!-- Separator -->
-            <div class="px-3 mb-2 hidden md:block lg:hidden text-center text-xs text-gray-700">-</div>
+            <span class="text-[11px] font-bold text-gray-200">History</span>
+        </a>
 
-            <ul class="space-y-1">
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Operating Account">
-                        <i data-lucide="wallet" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Operating Account</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Payroll Account">
-                        <i data-lucide="users" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Payroll Account</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Savings">
-                        <i data-lucide="piggy-bank" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Savings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Cards">
-                        <i data-lucide="credit-card" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Cards</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <!-- Analytics -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+            <div
+                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+                <i data-lucide="bar-chart-2" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+            </div>
+            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Stats</span>
+        </a>
 
-        <!-- Workflows Section -->
-        <div>
-            <div class="px-3 mb-2 text-xs font-medium text-gray-500 uppercase tracking-wider md:hidden lg:block">
-                Workflows</div>
-            <!-- Separator -->
-            <div class="px-3 mb-2 hidden md:block lg:hidden text-center text-xs text-gray-700">-</div>
+        <!-- Divider -->
+        <div class="w-8 h-[1px] bg-border my-2"></div>
 
-            <ul class="space-y-1">
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Bill Pay">
-                        <i data-lucide="calendar-clock" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Bill Pay</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-400 hover:text-white hover:bg-white/5 transition-colors group md:justify-center lg:justify-start"
-                        title="Approvals">
-                        <i data-lucide="check-circle" class="w-4 h-4 group-hover:text-white transition-colors"></i>
-                        <span class="text-sm font-medium md:hidden lg:block">Approvals</span>
-                        <span
-                            class="ml-auto bg-primary/20 text-primary text-[10px] px-1.5 py-0.5 rounded-full font-bold md:hidden lg:inline-flex">3</span>
-                        <!-- Dot for tablet -->
-                        <span
-                            class="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full hidden md:block lg:hidden border-2 border-surface-50"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <!-- Wallet / Accounts -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+            <div
+                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+                <i data-lucide="wallet" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+            </div>
+            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Wallet</span>
+        </a>
+
+        <!-- Savings -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+            <div
+                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+                <i data-lucide="piggy-bank" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+            </div>
+            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Save</span>
+        </a>
+
+        <!-- Divider -->
+        <div class="w-8 h-[1px] bg-border my-2"></div>
+
+        <!-- Approvals -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1 relative">
+            <div
+                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+                <!-- Badge -->
+                <span
+                    class="absolute top-1 right-2 w-2.5 h-2.5 bg-red-500 rounded-full border border-surface-50 z-10"></span>
+                <i data-lucide="check-circle"
+                    class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
+            </div>
+            <span class="text-[11px] font-medium text-gray-400 group-hover:text-white transition-colors">Tasks</span>
+        </a>
+
     </nav>
 
-    <!-- User Profile (Bottom) -->
-    <div class="p-4 border-t border-border/50 md:p-2 lg:p-4">
-        <button
-            class="flex items-center gap-3 w-full p-2 rounded-lg hover:bg-white/5 transition-colors text-left md:justify-center lg:justify-start">
-            <img src="https://ui-avatars.com/api/?name=John+Doe&background=27272a&color=fff" alt="User"
-                class="w-8 h-8 rounded-full shrink-0">
-            <div class="flex-1 min-w-0 md:hidden lg:block">
-                <h4 class="text-sm font-medium text-white truncate">John Doe</h4>
-                <p class="text-xs text-gray-500 truncate">john@finora.co</p>
+    <!-- Bottom Actions / User -->
+    <div class="mt-auto flex flex-col gap-4 items-center w-full">
+        <!-- Settings -->
+        <a href="#" class="group w-full flex flex-col items-center gap-1 p-1">
+            <div
+                class="w-14 h-8 rounded-full flex items-center justify-center transition-colors group-hover:bg-white/10">
+                <i data-lucide="settings" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"></i>
             </div>
-            <i data-lucide="chevron-up" class="w-4 h-4 text-gray-500 md:hidden lg:block"></i>
+            <!-- No label for settings commonly in rail, or keep it consistent -->
+        </a>
+
+        <!-- User Avatar -->
+        <button
+            class="w-10 h-10 rounded-full bg-gray-700 overflow-hidden ring-2 ring-transparent hover:ring-primary/50 transition-all mt-2">
+            <img src="https://ui-avatars.com/api/?name=John+Doe&background=27272a&color=fff" alt="User"
+                class="w-full h-full object-cover">
         </button>
     </div>
 </aside>
