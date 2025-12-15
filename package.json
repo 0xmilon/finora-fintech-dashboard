@@ -1,6 +1,27 @@
 {
-    "name": "fintech-dashboard",
+    "name": "finora",
     "version": "1.0.0",
+    "description": "A premium, futuristic fintech dashboard built with a Linear-esque design philosophy",
+    "keywords": [
+        "fintech",
+        "dashboard",
+        "financial",
+        "analytics",
+        "tailwindcss",
+        "bun",
+        "dark-mode",
+        "premium-ui"
+    ],
+    "author": "",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/0xmilon/finora-fintech-dashboard.git"
+    },
+    "bugs": {
+        "url": "https://github.com/0xmilon/finora-fintech-dashboard/issues"
+    },
+    "homepage": "https://github.com/0xmilon/finora-fintech-dashboard#readme",
     "module": "index.ts",
     "type": "module",
     "scripts": {
