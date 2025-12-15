@@ -4,6 +4,10 @@
 
 ![Finora Dashboard](screenshots/screenshot.png)
 
+## 🌐 Live Demo
+
+👉 **[View Live Demo](https://finora-9fx.pages.dev/)**
+
 ## ✨ Features
 
 - **Premium Dark Mode UI** - Deep dark theme (`#0A0A0A`) with glassmorphism effects
@@ -160,6 +164,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 For questions, suggestions, or support, please open an issue on GitHub.
+
+**Follow on X (Twitter)**: [@milonspace](https://x.com/milonspace)
 
 ---
 
